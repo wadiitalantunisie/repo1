@@ -1,0 +1,70 @@
+pipline {
+
+	agent any 
+
+	stages {
+
+
+		stage('Compile Stage')
+		{
+
+
+			steps
+
+				{ 
+				withMaven(maven :'maven_3_5_2')
+
+					{
+				sh 'mvn clean compile'
+					}
+
+
+				}
+				
+		}
+				
+				
+				
+				Stage('Testing stage')
+				
+				{
+				
+				steps
+
+				{ 
+				withMaven(maven :'maven_3_5_2')
+
+					{
+				sh 'mvn test'
+					}
+
+
+				}
+				
+				
+				
+					}
+					
+					
+					
+					Stage('Testing stage')
+				
+				{
+				
+				steps
+
+				{ 
+				withMaven(maven :'maven_3_5_2')
+
+					{
+				sh 'mvn deploy'
+					}
+
+
+				}
+
+					}
+
+						}
+	
+						}

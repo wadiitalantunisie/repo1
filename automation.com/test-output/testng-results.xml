@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11730" started-at="2018-12-27T15:38:11Z" finished-at="2018-12-27T15:38:23Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11730" started-at="2018-12-27T15:38:11Z" finished-at="2018-12-27T15:38:23Z">
+      <class name="org.example.NewTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.example.NewTest@3c41ed1d]" name="beforeMethod" is-config="true" duration-ms="2667" started-at="2018-12-27T15:38:11Z" finished-at="2018-12-27T15:38:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f2()[pri:1, instance:org.example.NewTest@3c41ed1d]" name="f2" duration-ms="6910" started-at="2018-12-27T15:38:14Z" finished-at="2018-12-27T15:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.example.NewTest@3c41ed1d]" name="beforeMethod" is-config="true" duration-ms="2131" started-at="2018-12-27T15:38:21Z" finished-at="2018-12-27T15:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:2, instance:org.example.NewTest@3c41ed1d]" name="f" duration-ms="1" started-at="2018-12-27T15:38:23Z" finished-at="2018-12-27T15:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- org.example.NewTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
