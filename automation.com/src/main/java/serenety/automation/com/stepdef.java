@@ -170,7 +170,19 @@ driver.findElement(By.linkText("VOIR LA DÉMO")).click();
 	@Then("^check more outcomes$")
 	
 	public void check_more_outcomes() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
 	   
 	}
 }
