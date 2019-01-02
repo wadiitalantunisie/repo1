@@ -29,12 +29,7 @@ import net.thucydides.core.annotations.Screenshots;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 
-
-
-
 public class stepdef {
-	
-	
 	
 public String baseUrl = "https://www.salesforce.com/fr/";
 	//String driverPath = "C:\\SeleniumGecko.exe";
@@ -49,8 +44,6 @@ public String baseUrl = "https://www.salesforce.com/fr/";
 	 // Write code here that turns the phrase above into concrete actions
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Nouveau_dossier\\chromedriver.exe"); 
-		
-		
 			//driver=new FirefoxDriver();
 	        driver=new ChromeDriver();
 	        driver.get(baseUrl);
@@ -104,13 +97,9 @@ public void I_enter_my_name() throws Throwable {
         File   source=ts.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(source,new File("./screenshots/test.png"));
         System.out.println("screenshot taken");
-        
-
         String expectedTitle = "Welcome: Mercury Tours";
         String actualTitle = driver.getTitle();
-    
-  
-   
+
  //check screenshot    
    if (check==true)
   System.out.println("Test ok");
@@ -135,13 +124,13 @@ public void I_enter_my_name() throws Throwable {
  
   
 System.out.println(expectedtest);
-
-
-
 //System.out.println("x");
 
-  
 if (expectedtest.contentEquals(actualtext))
+	
+	
+	
+//-----------------------------------------------------
 	
 	System.out.println("-----------------------Test OK-----------------------------------------");
 
@@ -171,18 +160,7 @@ driver.findElement(By.linkText("VOIR LA DÉMO")).click();
 	
 	public void check_more_outcomes() throws Throwable {
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
+
 	   
 	}
 }
