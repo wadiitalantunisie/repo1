@@ -28,9 +28,7 @@
 			<url>http://dl.bintray.com/serenity/maven</url>
 	</repository>
 	</repositories>
-	
-	
-	<!-- PluginRepositories -->
+<!-- PluginRepositories -->
 	
 	<pluginRepositories>
 		<pluginRepository>

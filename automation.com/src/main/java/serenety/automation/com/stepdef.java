@@ -1,12 +1,9 @@
 package serenety.automation.com;
-
 import static org.testng.Assert.assertEquals;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.sql.DriverManager;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.springframework.util.Assert;
+import org.testng.annotations.Test;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,8 +24,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.Screenshots;
-import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
+ 
 
 public class stepdef {
 	
@@ -127,9 +124,6 @@ System.out.println(expectedtest);
 //System.out.println("x");
 
 if (expectedtest.contentEquals(actualtext))
-	
-	
-	
 //-----------------------------------------------------
 	
 	System.out.println("-----------------------Test OK-----------------------------------------");
@@ -137,22 +131,13 @@ if (expectedtest.contentEquals(actualtext))
 else 
 	
 	System.out.println("-----------------------Test KO-----------------------------------------");
-	
-	
 driver.findElement(By.linkText("gamme de produits salesforce.com")).click();
-
-
 driver.findElement(By.linkText("Ventes")).click();
-
 driver.findElement(By.linkText("VOIR LA DÉMO")).click();
-
- 
 //  driver.quit();
 }
-
-	@Then("^I validate the outcomes$")
-
-	public void i_validate_the_outcomes() throws Throwable {
+@Then("^I validate the outcomes$")
+public void i_validate_the_outcomes() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	}
 
